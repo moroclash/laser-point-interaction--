@@ -22,7 +22,7 @@ import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
 
 
-public class Test_2 {
+public class CoreCode {
 
     
    /*183.0f
@@ -326,7 +326,7 @@ public class Test_2 {
     }    
 
     public static void setCcircel(boolean ccircel) {
-        Test_2.ccircel = ccircel;
+        CoreCode.ccircel = ccircel;
     }
     
     
@@ -467,19 +467,19 @@ public class Test_2 {
  }
 
     public static void setLeft(boolean left) {
-        Test_2.left = left;
+        CoreCode.left = left;
     }
 
     public static void setBooton(boolean booton) {
-        Test_2.booton = booton;
+        CoreCode.booton = booton;
     }
 
     public static void setRight(boolean right) {
-        Test_2.right = right;
+        CoreCode.right = right;
     }
 
     public static void setUp(boolean up) {
-        Test_2.up = up;
+        CoreCode.up = up;
     }
  
  

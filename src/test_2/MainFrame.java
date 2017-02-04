@@ -237,7 +237,7 @@ public class MainFrame extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         Mat ma = new Mat();
         ma = Imgcodecs.imread(path+"/"+name);
-        ma = Test_2.pointsimg(ma);
+        ma = CoreCode.pointsimg(ma);
         Imgcodecs.imwrite(graypath, ma);
         Thread t = new Thread()
           {
@@ -284,7 +284,7 @@ public class MainFrame extends javax.swing.JFrame {
                         vedio.grab();
                         vedio.retrieve(mat1);
                         vedio.retrieve(mat2);
-                        mat = Test_2.points(mat1,mat2,chose,jPanel1.getWidth(),jPanel1.getHeight());
+                        mat = CoreCode.points(mat1,mat2,chose,jPanel1.getWidth(),jPanel1.getHeight());
                         Core.flip(mat, mat, 2);
                         Imgcodecs.imencode(".jpg", mat, MB);
                         Image img = ImageIO.read(new ByteArrayInputStream(MB.toArray()));
@@ -292,16 +292,16 @@ public class MainFrame extends javax.swing.JFrame {
                         Graphics2D g = (Graphics2D) jPanel1.getGraphics();
                         g.scale(wid, hghi);
                         g.drawImage(img ,0, 0, jPanel1.getWidth(),jPanel1.getHeight(), 0, 0, buf.getWidth(), buf.getHeight(), null);
-                        if(Test_2.isCcircel())
+                        if(CoreCode.isCcircel())
                             {
                                    wid=1.6;
                                    hghi=1.6;
                                    ch = true;
-                                   Test_2.left=false;
-                                   Test_2.right=false;
-                                   Test_2.booton=false;
+                                   CoreCode.left=false;
+                                   CoreCode.right=false;
+                                   CoreCode.booton=false;
                             } 
-                        if(Test_2.isleft())
+                        if(CoreCode.isleft())
                         {
                             
                             jLabel1.setText("left");
@@ -309,23 +309,23 @@ public class MainFrame extends javax.swing.JFrame {
                             
                         }
                          
-                         else if(Test_2.isRight())
+                         else if(CoreCode.isRight())
                         {
                                 jLabel1.setText("snaping shoot "+it);
                                 Imgcodecs.imwrite("shoot number "+it+".jpg", mat);
                                 it++;
-                                Test_2.setRight(false);
+                                CoreCode.setRight(false);
                                 ch = false;
                         }
-                         else if(Test_2.isUp())
+                         else if(CoreCode.isUp())
                         {
-                            Test_2.up=false;
+                            CoreCode.up=false;
                             if(ch)
                             {
                                    wid=1;
                                    hghi=1;
                                    ch = false;
-                                   Test_2.setCcircel(false);
+                                   CoreCode.setCcircel(false);
                             }
                             else
                             {
@@ -333,7 +333,7 @@ public class MainFrame extends javax.swing.JFrame {
                             chose = 2;
                             }
                         }
-                         else if(Test_2.isBooton())
+                         else if(CoreCode.isBooton())
                         {
                             jLabel1.setText("down");
                             chose = 1;
