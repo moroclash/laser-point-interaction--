@@ -31,7 +31,7 @@
 
 1. make shoure you install OpenCV-3.1.0 on your pc. 
 2. add OpenCV-lib in Project Library .
-   *it's very easy in netbeans or eclips.
+ * it's very easy in netbeans or eclips.
 3. use netbeans or eclips to run project.
 
 ##How use it >
@@ -49,10 +49,10 @@
   * Direct **Laser Beam** to **PC Screen**.
   * Move your hand .
   * Direct the **Beam** to video edges to intract.
-   * **UP-edge** : make video  **GrayScale** automatically.
-   * **Down-edge** : make video **RGB** automatically.
-   * **Right-edge** : take **ScreanShot**.
-   * **Left-edge** : to **Exit** form program
+    * **UP-edge** : make video  **GrayScale** automatically.
+    * **Down-edge** : make video **RGB** automatically.
+    * **Right-edge** : take **ScreanShot**.
+    * **Left-edge** : to **Exit** form program
 
 
 ######note : Be carful when start **Video** , don't make your room very Brightness or very Darkness make it medium , it is not effective in Brightness places
