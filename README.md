@@ -7,8 +7,8 @@
 ##uses:
 
 
-1. you can use it to get **Brighitness point** in image. 
-2. convert images to **grayscall** "Black & White".
+1. you can use it to get **Brightness point** in image. 
+2. convert images to **grayscale** "Black & White".
 3. interact with PC using Laser .
    * you should have **PC Camira** to can use option **3**
 
